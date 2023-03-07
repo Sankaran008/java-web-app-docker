@@ -3,7 +3,7 @@ FROM openjdk:17-jdk-alpine3.14
 ENV CATALINA_HOME /usr/local/tomcat
 ENV PATH $CATALINA_HOME/bin:$PATH
 
-RUN apk add --no-cache curl tar && \
+RUN apk add --no-cache bash curl tar && \
     wget -q https://downloads.apache.org/tomcat/tomcat-10/v10.1.7/bin/apache-tomcat-10.1.7.tar.gz && \
     tar -xzf apache-tomcat-10.1.7.tar.gz && \
     rm apache-tomcat-10.1.7.tar.gz && \
