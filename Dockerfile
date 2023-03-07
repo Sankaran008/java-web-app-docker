@@ -10,8 +10,9 @@ RUN apk add --no-cache curl tar && \
     mv apache-tomcat-10.1.6 $CATALINA_HOME
 
 COPY target/java-web-app*.war $CATALINA_HOME/webapps/java-web-app.war
-RUN apt-get update && apt-get install -y bash
+
 
 EXPOSE 8080
 
 CMD ["catalina.sh", "run"]
+RUN apt-get update && apt-get install -y bash
