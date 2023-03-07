@@ -8,8 +8,9 @@ RUN apk add --no-cache curl tar && \
     tar -xzf apache-tomcat-10.1.6.tar.gz && \
     rm apache-tomcat-10.1.6.tar.gz && \
     mv apache-tomcat-10.1.6 $CATALINA_HOME
-RUN apt-get update && apt-get install -y bash
+
 COPY target/java-web-app*.war $CATALINA_HOME/webapps/java-web-app.war
+RUN apt-get update && apt-get install -y bash
 
 EXPOSE 8080
 
