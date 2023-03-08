@@ -79,7 +79,7 @@
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>javax.servlet-api</artifactId>
-			<version>4.0.1</version>
+			<version>3.1.0</version>
 			<scope>provided</scope>
 		</dependency>
 		
@@ -110,19 +110,6 @@
 	      <url>http://13.235.8.113:8081/repository/flipkart-snapshot/</url>
 	    </snapshotRepository>
 	</distributionManagement> -->
-	  <repositories>
-            <repository>
-              <id>central</id>
-              <name>Central Repository</name>
-              <url>https://repo.maven.apache.org/maven2</url>
-            </repository>
-            <repository>
-              <id>javax.servlet</id>
-              <name>Java Servlet API Repository</name>
-      <!-- url>https://mvnrepository.com/artifact/javax.servlet</url> -->
-	      <url>https://repo1.maven.org/maven2/javax/servlet/javax.servlet-api/4.0.1/</url>
-            </repository>
-         </repositories>
 	
 	<build>
 		<plugins>
